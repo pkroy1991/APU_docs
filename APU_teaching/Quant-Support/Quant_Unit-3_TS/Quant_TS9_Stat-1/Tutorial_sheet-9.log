@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  19 MAY 2026 12:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.11)  25 MAY 2026 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Tutorial_sheet-8.tex
-(./Tutorial_sheet-8.tex
+**Tutorial_sheet-9.tex
+(./Tutorial_sheet-9.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsart.cls
@@ -683,8 +683,8 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
 \l__pdf_internal_box=\box68
 )
-(./Tutorial_sheet-8.aux)
-\openout1 = `Tutorial_sheet-8.aux'.
+(./Tutorial_sheet-9.aux)
+\openout1 = `Tutorial_sheet-9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -771,31 +771,21 @@ e
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<QS-TS8-Q1.png, id=4, 721.69624pt x 182.6825pt>
-File: QS-TS8-Q1.png Graphic file (type png)
-<use QS-TS8-Q1.png>
-Package pdftex.def Info: QS-TS8-Q1.png  used on input line 48.
-(pdftex.def)             Requested size: 297.80121pt x 75.38254pt.
-<QS-TS8-Q3.png, id=6, 735.74875pt x 174.6525pt>
-File: QS-TS8-Q3.png Graphic file (type png)
-<use QS-TS8-Q3.png>
-Package pdftex.def Info: QS-TS8-Q3.png  used on input line 71.
-(pdftex.def)             Requested size: 297.80121pt x 70.6939pt.
-<QS-TS8-Q4.png, id=7, 798.985pt x 462.72874pt>
-File: QS-TS8-Q4.png Graphic file (type png)
-<use QS-TS8-Q4.png>
-Package pdftex.def Info: QS-TS8-Q4.png  used on input line 87.
-(pdftex.def)             Requested size: 297.80121pt x 172.47081pt.
-[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./QS-
-TS8-Q1.png> <./QS-TS8-Q3.png> <./QS-TS8-Q4.png>]
-Overfull \hbox (6.31274pt too wide) in paragraph at lines 121--128
- [] 
+<Azim_Premji_University_logo.png, id=4, 213.04594pt x 97.86563pt>
+File: Azim_Premji_University_logo.png Graphic file (type png)
+<use Azim_Premji_University_logo.png>
+Package pdftex.def Info: Azim_Premji_University_logo.png  used on input line 42
+.
+(pdftex.def)             Requested size: 85.35826pt x 39.21124pt.
+
+Overfull \hbox (76.06004pt too wide) in paragraph at lines 32--45
+[]| [] 
  []
 
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Azi
+m_Premji_University_logo.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (14.83835pt too wide) in paragraph at lines 160--168
- [] 
- []
 
 
 Package fancyhdr Warning: \footskip is too small (12.0pt): 
@@ -803,50 +793,29 @@ Package fancyhdr Warning: \footskip is too small (12.0pt):
 (fancyhdr)                \setlength{\footskip}{14.0pt}.
 
 [2]
-<QS-TS8-Q14.png, id=22, 142.5325pt x 140.525pt>
-File: QS-TS8-Q14.png Graphic file (type png)
-<use QS-TS8-Q14.png>
-Package pdftex.def Info: QS-TS8-Q14.png  used on input line 308.
-(pdftex.def)             Requested size: 99.26454pt x 97.86507pt.
-
-Underfull \vbox (badness 1314) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \footskip is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{14.0pt}.
 
-[3]
-<QS-TS8-Q15.png, id=27, 192.72pt x 189.70876pt>
-File: QS-TS8-Q15.png Graphic file (type png)
-<use QS-TS8-Q15.png>
-Package pdftex.def Info: QS-TS8-Q15.png  used on input line 323.
-(pdftex.def)             Requested size: 99.26454pt x 97.71123pt.
-
-
-Package fancyhdr Warning: \footskip is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{14.0pt}.
-
-[4 <./QS-TS8-Q14.png> <./QS-TS8-Q15.png>] (./Tutorial_sheet-8.aux) ) 
+[3] (./Tutorial_sheet-9.aux) ) 
 Here is how much of TeX's memory you used:
- 26148 strings out of 476025
- 661606 string characters out of 5790017
- 1876388 words of memory out of 5000000
- 46033 multiletter control sequences out of 15000+600000
- 520785 words of font info for 66 fonts, out of 8000000 for 9000
+ 25480 strings out of 476025
+ 643967 string characters out of 5790017
+ 1870388 words of memory out of 5000000
+ 45369 multiletter control sequences out of 15000+600000
+ 519237 words of font info for 60 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 84i,12n,89p,771b,2294s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local
-/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on Tutorial_sheet-8.pdf (4 pages, 282605 bytes).
+ 84i,12n,89p,771b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr9.pfb>
+Output written on Tutorial_sheet-9.pdf (3 pages, 70226 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

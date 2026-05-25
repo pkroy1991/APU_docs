@@ -1,0 +1,280 @@
+\documentclass[11pt,reqno,a4paper]{amsart}
+\usepackage[all, cmtip]{xy}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}   
+
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage[pdftex]{graphicx}
+\usepackage{todonotes}
+\usepackage{amsmath}
+
+
+\usepackage{tikz-cd}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}  
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+%\usepackage{graphicx}8
+\usepackage[noadjust]{cite}
+\usepackage{caption}
+%\usepackage{showkeys}[notref,notcite]
+\usepackage{dutchcal}
+\usepackage{bbm}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{verbatim}
+
+
+\usepackage[top=2.9cm, bottom=2.9cm, left=2.5cm, right=2.5cm, headsep=0.2in]{geometry}
+
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CE]{\small\scshape P. Roy}
+\fancyhead[CO]{\small\scshape Seshadri constants on simple $G$ varieties}
+\fancyhead[LE,RO]{\thepage}
+
+\setlength{\headheight}{13pt}
+\setlength\parindent{0em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{calculation}[theorem]{Calculation}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{theo}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{clm}[theorem]{Claim}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{defn}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+%\newtheorem{exmp}[theorem]{Example}
+\newtheorem{assumption}[theorem]{Assumption}
+%\newtheorem{remark}[theorem]{Remark}
+
+\theoremstyle{remark}
+	\newtheorem{remark}[theorem]{Remark}
+	\newtheorem{exmp}[theorem]{Example}
+
+
+
+\newcommand{\V}{\Vert}
+\newcommand{\RR} {\mathbb R}
+\newcommand{\CC} {\mathbb C}
+\newcommand{\ZZ} {\mathbb Z}
+\newcommand{\NN} {\mathbb N}
+\newcommand{\TT} {\mathbb T}
+\newcommand{\AAA} {\mathbb A}
+\newcommand{\QQ} {\mathbb Q}
+\newcommand{\PP} {\mathbb P}
+
+\newcommand{\inrad}{\operatorname{inrad}}
+\newcommand{\locnod}{\Omega_{\loc}}
+
+\newcommand{\pa} {\partial}
+\newcommand{\Cal} {\mathcal}
+
+\newcommand{\beq} {\begin{equation}}
+\newcommand{\eeq} {\end{equation}}
+\newcommand{\demo} {\noindent {\it Proof. }}
+
+
+\newcommand{\ep} {\varepsilon}
+\newcommand{\sk} {$\text{}$ \newline}
+\newcommand{\Ker} {\operatorname{Ker}}
+\newcommand{\loc} {\operatorname{loc}}
+\newcommand{\mcl} {\operatorname{mcl}}
+\newcommand{\cl} {\operatorname{cl}}
+\newcommand{\supp} {\operatorname{supp}}
+\newcommand{\Ric} {\operatorname{Ric}}
+\newcommand{\bmo} {\operatorname{bmo}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\capacity}{\operatorname{cap}}
+\setlength\parindent{0em}
+\renewcommand{\Im} {\operatorname{Im}}
+\renewcommand{\Re} {\operatorname{Re}}
+
+
+
+\begin{document}
+
+\title[Positivity on simple $G$-varieties]{Summer Research Plan}
+\author{Praveen Kumar Roy}
+
+
+\address{Azim Premji University-Bhopal, India}
+\email{praveen.roy@apu.edu.in}
+
+
+
+
+\maketitle
+
+I am planning for a research visit beginning from 18/05/2026 until 03/07/2026. During this period I will be visiting some of my collaborators, for example Pinakinath Saha (assistant professor at IIT Delhi), Krishna Hanumanthu, (professor at 
+Chennai Mathematical Institute and also my PhD advisor) and Bivas Khan (assistant professor at IIT BHU). We have an ongoing research collaboration (details later) which we want to advance and make some progress.
+
+\subsection*{Background:} Let $X$ be an algebraic variety and $L$ be a line bundle on $X$. A line bundle $L$ is said to be \textit{very ample} if the rational map $\phi_L : X \longrightarrow \mathbb{P}^n$ defined by the global sections of $L$ is an immersion for some $n$, and in addition $ \phi_L^*(\mathcal{O}_{\mathbb{P}^n}(1)) = L$ \cite{Har}. \\
+
+A Line bundle $L$ is then said to be \textit{ample} if $L^{\otimes n}$ for some $n >> 0$ is very ample \cite{Har}. Equivalently, Nakai-Moishezon-Kleiman criteria for the ampleness of a line bundle says:
+
+\begin{definition}[Nakai-Moishezon-Kleiman \cite{Laz}]
+A line bundle $L$ is ample iff $L^{\rm{dim} V} \cdot V > 0$ for every irreducible subvariety $V \subset X$.
+\end{definition}
+
+Similarly, one can define the numerically effectiveness (nefness) of a line bundle $L$ on $X$ as follows:
+\begin{definition}[Nef \cite{Laz}]
+A line bundle $L$ is numerically effective (nef) iff $L^{\rm{dim} V} \cdot V \geq 0$ for every irreducible subvariety $V \subset X$.
+\end{definition}
+
+The following is a characterization for ampleness of a line bundle $L$ on a projective variety $X$ to be ample.
+
+\begin{theorem}[Seshadri's criterion for ampleness \cite{Har1}]
+Let $X$ be a projective variety and $L$ be a line bundle on $X$. Then, $L$ is ample if and only if for every $x \in X$, there exists a positive number $\varepsilon > 0$ such that
+\[
+\frac{L\cdot C}{mult_x C} \geq \varepsilon
+\]
+where $x$ is an arbitrary point of $X$ and $C\subset X$ is any reduced and irreducible curve containing $x$.
+\end{theorem}
+
+Using the above characterization of ampleness of a line bundle, Demailly defined the Seshadri constant of a line bundle 
+at a point \cite{Dem}.
+\begin{definition}[Seshadri constant at a point]
+Let $X$ be a smooth projective variety and $L$ be a nef line bundle on $X$. Let $x \in X$ be a point, then the Seshadri constant of $L$ at $x$ is defined as
+\[
+\varepsilon(X, L, x) := \frac{L\cdot C}{mult_x C}.
+\]
+where the infimum is taken over all reduced and irreducible curves $C \subset X$ passing through $x$.
+\end{definition}
+Taking a further infimum and supremum over all points we get the following two constants:
+\begin{definition}
+\begin{enumerate}
+\item[(a)] $\varepsilon(X, L) := \inf\limits_{x \in X} \varepsilon(X, L, x).$
+\item[(b)]  $\varepsilon(X, L, 1) := \sup\limits_{x \in X} \varepsilon(X, L, x).$
+\end{enumerate}
+\end{definition}
+Note that the Seshadri constant $\varepsilon(X, L, x)$ is a real number which lie in the interval $[0, \sqrt[n]{L^n}]$, 
+where $L^n$ is n-th self intersection of $L$. In-fact for an ample line bundle $L$ we have the following sequence of inequalities:
+\[
+0 < \varepsilon(X, L) \leq \varepsilon(X, L, x) \leq \varepsilon(X, L,1) \leq \sqrt[n]{L^n}.
+\]
+
+\subsubsection*{Ampleness of vector bundle:}
+The notion of ampleness and nefnees is extended to vector bundles in the following natural way. Let $X$ be a projective 
+variety and $E$ be a vector bundle on $X$, then $E$ is said to be ample (nef) if $\mathcal{O}_{\mathbb{P}(E)}(1)$ is ample (resp. nef) on $\mathbb{P}(E)$.
+
+\subsubsection*{The guiding research problems in the area of positivity are as follows:}
+\begin{itemize}
+\item[(i)] Determine when a given line bundle $L$ or a vector bundle $E$ on a projective variety $X$ is ample (nef).
+\item[(ii)] Given an ample (nef) line bundle $L$ or a vector bundle $E$ on a projective variety $X$, compute the Seshadri constant  of $L$ or of $E$ at a point $x \in X$.
+\item[(iii)] If computing $\varepsilon(X, L, x)$ is difficult, provide a bound.
+\item[(iv)] Determine if $\varepsilon(X, L)$ is a rational number.
+\end{itemize}
+
+\subsection*{Objective 1:}
+Let $X$ be a normal projective variety equipped with an action of a semisimple algebraic group $G$, and assume that $X$ contains a unique closed orbit. Let $B$ be a Borel subgroup of $G$ and let $E$ be a $B$-equivariant vector bundle on $X$. 
+For more details about notations and definition see \cite{bial}, \cite{konar}, and \cite{brion}. In this setting, we would like to explore the following
+\begin{question}
+If the restriction of $E$ to every curve in $X$ is ample, then under what conditions is $E$ itself ample?
+\end{question}
+
+This question has been studied in several situations. An affirmative answer is given when 
+$E$ is a torus-equivariant vector bundle, either on a toric variety  (see \cite[Theorem 2.1]{HMP}) or on a 
+generalized flag variety (see \cite{bhn}). A related question was studied for equivariant vector bundles on wonderful compactifications in \cite{BKN}, for Bott-Samelson-Demazure-Hansen varieties or wonderful compactifications of a symmetric varieties of minimal rank in \cite{bhks}, and for $G$-Bott-Samelson-Demazure-Hansen varieties in \cite{B-P}.
+
+\subsection*{Objective 2:} Additionally, we are interested in computing the Seshadri constants of ample line bundles and 
+vector bundles on simple $G$-projective variety $X$. In particular, we are interested in computing 
+\begin{enumerate}
+\item $\varepsilon(X,L;x)$, for an ample line bundle $L$ at a pont $x\in X$
+\item $\varepsilon(X,E;x)$, for a $B$-equivariant nef vector bundle $E$ at $x \in X$
+\end{enumerate}
+
+
+\subsection*{Objective 3:}
+Let $X$ be a compact Reimann surface and $(E, \phi)$ be a pair, where $E$ is a vector bundle on $X$ and $\phi$ is a 
+section of $E$, i.e., $\phi \in H^0(X, E)$. We then consider $X \times \mathbb{P}^1$ and the two projections $q_1 : X \times \mathbb{P}^1 \longrightarrow X$ and $q_2 : X \times \mathbb{P}^1 \longrightarrow 
+\mathbb{P}^1$.  We get the following short exact sequence of bundles:
+\[
+0 \longrightarrow q_1^*E \longrightarrow W \longrightarrow q_2^*(\mathcal{O}(2)) \longrightarrow 0.
+\] 
+
+We would like to express the ampleness/nefness of $W$ in terms of the pair $(E, \phi)$.
+
+
+
+
+
+
+\bibliographystyle{plain}
+\begin{thebibliography}{100}
+
+%\bibitem{B} Bauer, Thomas. {\it Seshadri constants and periods of polarized abelian varieties}. Math. Ann. \textbf{312}, 607-623 (1998).
+
+\bibitem{bial} Białynicki-Birula, Andrzej. {\it Some theorems on actions of algebraic groups}. Ann. of Math. \textbf{98}, 480-497 (1973).
+
+%\bibitem{Bel1} Beltrametti, Mauro C.; Schneider, Michael; Sommese, Andrew J. {\it Applications of the Ein-Lazarsfeld criterion for spannedness of adjoint bundles}. Math. Z. \textbf{214}, 593-599 (1993).
+
+%\bibitem{Bel2} Beltrametti, Mauro C.; Schneider, Michael; Sommese, Andrew J. {\it Chern inequalities and spannedness of adjoint bundles}. Israel Math. Conf. Proc. \textbf{9}, 97-107 (1996).
+
+\bibitem{B-P} Bhaumik, Saurav; Saha, Pinakinath. {\it Line bundles on $G$-Bott-Samelson-Demazure-Hansen varieties}. J. Pure Appl. Algebra \textbf{228}, 107640 (2024).
+
+\bibitem{bhks} Biswas, Indranil; Hanumanthu, Krishna; Kannan, S. Senthamarai. {\it On the Seshadri constants of equivariant bundles over Bott-Samelson varieties and wonderful compactifications}. Manuscripta Math. \textbf{173}, 711-726 (2024).
+
+%\bibitem{BHM} Biswas, Indranil; Hanumanthu, Krishna; Misra, Snehajit. {\it Some results on Seshadri constants of vector bundles}. Forum Math. \textbf{36}, 641-653 (2024).
+
+%\bibitem{BHMN} Biswas, Indranil; Hanumanthu, Krishna; Misra, Snehajit; Ray, Nabanita. {\it Seshadri constants of parabolic vector bundles}. Doc. Math. \textbf{28}, 1163-1190 (2023).
+
+\bibitem{bhn} Biswas, Indranil; Hanumanthu, Krishna; Nagaraj, D. S. {\it Positivity of vector bundles on homogeneous varieties}. Int. J. Math. \textbf{31}, 2050097 (2020).
+
+\bibitem{BKN} Biswas, Indranil; Kannan, S. Senthamarai; Nagaraj, D. S. {\it Equivariant vector bundles on complete symmetric varieties of minimal rank}. Int. J. Math. \textbf{25}(14), 1450120 (2014).
+
+\bibitem{brion} Brion, Michel. {\it The cone of effective one-cycles of certain $G$-varieties}. In: A Tribute to C. S. Seshadri, Hindustan Book Agency, 180-198 (2003).
+
+\bibitem{Dem} Demailly, Jean-Pierre. {\it Singular Hermitian metrics on positive line bundles}. Lecture Notes in Math. \textbf{1507}, 87-104 (1992).
+
+%\bibitem{fmss} Fulton, William; MacPherson, R. D.; Sottile, Francesco; Sturmfels, Bernd. {\it Intersection theory on spherical varieties}. J. Algebraic Geom. \textbf{4}, 181-193 (1994).
+
+%\bibitem{Fulton} Fulton, William; {\it Intersection theory}. Springer-Verlag,  \textbf{2}, Berlin (1998).
+
+%\bibitem{GHS} Gangopadhyay, C.; Hanumanthu, Krishna; Sebastian, Ronnie. {\it Seshadri constants on some Quot schemes}. Forum Math. \textbf{33}, 1591-1603 (2021).
+
+%\bibitem{Grothendieck} Grothendieck, Alexander. {\it Sur la classification des fibrés holomorphes sur la sphère de Riemann}. Amer. J. Math. \textbf{79}, 121-138 (1957).
+
+\bibitem{Har1} Hartshorne, Robin. {\it Ample subvarieties of algebraic varieties}. Lecture Notes in Math. \textbf{156}, Springer (1970).
+
+\bibitem{Har} Hartshorne, Robin. {\it Algebraic geometry}. Graduate Texts in Mathematics \textbf{52}, Springer-Verlag (1977).
+
+%\bibitem{Hac} Hacon, Christopher D. {\it Remarks on Seshadri constants of vector bundles}. Ann. Inst. Fourier (Grenoble) \textbf{50}, 767-780 (2000).
+
+%\bibitem{HMP} Hering, Milena; Mustaţă, Mircea; Payne, Sam. {\it Positivity properties of toric vector bundles}. Ann. Inst. Fourier (Grenoble) \textbf{60}, 607-640 (2010).
+
+%\bibitem{I} Ito, Atsushi. {\it Seshadri constants via toric degenerations}. J. Reine Angew. Math. \textbf{695}, 151-174 (2014).
+
+%\bibitem{K-P} Karmakar, Rupam; Kumar Roy, Praveen. {\it Seshadri constants on some blow-ups of projective spaces}. Int. J. Math. \textbf{35}, 2350097 (2024).
+
+\bibitem{konar} Konarski, Jerzy. {\it Decompositions of normal algebraic varieties determined by an action of a one-dimensional torus}. Bull. Acad. Polon. Sci. Sér. Sci. Math. Astronom. Phys. \textbf{26}, 295-300 (1978).
+
+\bibitem{Laz} Lazarsfeld, Robert. {\it Positivity in algebraic geometry II}. Ergebnisse der Mathematik und ihrer Grenzgebiete \textbf{49}, Springer-Verlag (2004).
+
+%\bibitem{L2} Lazarsfeld, Robert. {\it Lengths of periods and Seshadri constants of abelian varieties}. Math. Res. Lett. \textbf{3}, 439-447 (1996).
+
+%\bibitem{Lee} Lee, Seunghun. {\it Seshadri constants and Fano manifolds}. Math. Z. \textbf{245}, 645-656 (2003).
+
+%\bibitem{N} Nakamaye, Michael. {\it Seshadri constants on abelian varieties}. Amer. J. Math. \textbf{118}, 621-635 (1996).
+
+\end{thebibliography}
+\end{document}
+
