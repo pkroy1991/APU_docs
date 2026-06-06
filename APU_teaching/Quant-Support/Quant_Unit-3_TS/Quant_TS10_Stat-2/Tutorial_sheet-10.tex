@@ -1,0 +1,173 @@
+\documentclass[a4paper,leqno,12pt]{amsart}
+%
+\usepackage{amsmath,amsthm}
+\usepackage{graphicx}
+\usepackage[margin=0.7in]{geometry}
+
+\usepackage{enumitem}
+
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage[autostyle=true]{csquotes}
+
+\usepackage{pgfplots}
+\usepackage{pgf-pie} % simple and featureful for pie charts
+\pgfplotsset{compat=1.18}
+\usepackage{filecontents} % only needed for the external-data example
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header/footer fields
+\fancyfoot[C]{\bf ************************************} % 
+
+\newlist{Case}{enumerate}{1}
+\setlist[Case]{label=\bf{Case ~\arabic*:}}
+%
+\begin{document}
+
+
+\hspace*{1.9cm}% <-- adjust this value to push everything right
+\begin{tabular}{@{}p{0.7\textwidth}p{0.3\textwidth}@{}}
+ {\raggedright
+   \begin{center} 
+   \textbf{AZIM PREMJI UNIVERSITY, BHOPAL}\\
+   First Semester 2026--2027 \\
+   Tutorial Sheet--10
+   \end{center}
+  } &
+  {\raggedleft
+   \includegraphics[width=3cm]{Azim_Premji_University_logo.png} % replace logo.png with your file name
+  }
+\end{tabular}
+
+\noindent Course No. MTH-113 \hfill  Course title: Introduction to Quantitative Thinking
+\vspace{.3cm}
+\hrule 
+\vspace{.3cm}
+
+
+\begin{enumerate}
+\setlength\itemsep{1em}
+
+\item A survey was conducted by a group of students as a part of their environment awareness
+programme, in which they collected the following data regarding the number of plants in
+20 houses in a locality. Find the mean number of plants per house.
+\vspace{2mm}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  \textbf{Number of plants} & 0-2 & 2-4 & 4-6 & 6-8 & 8-10 & 10-12 & 12-14\\
+  \hline
+  \textbf{Number of houses} & 1 & 2 & 1 & 5 & 6 & 2 & 3 \\
+  \hline
+ \end{tabular}
+\end{center}
+Which method did you use for finding the mean, and why?
+
+\item In a retail market, fruit vendors were selling mangoes kept in packing boxes. These
+boxes contained varying number of mangoes. The following was the distribution of
+mangoes according to the number of boxes.
+
+\vspace{2mm}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  \textbf{Number of mangoes} & 50-52 & 53-55 & 56-58 & 59-61 & 62-64 \\
+  \hline
+  \textbf{Number of boxes} & 15 & 110 & 135 & 115 & 25 \\
+  \hline
+ \end{tabular}
+\end{center}
+Which method did you use for finding the mean, and why?
+
+\item The following table gives the literacy rate (in percentage) of 35 cities. Find the mean
+literacy rate.
+
+\vspace{2mm}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  \textbf{Literacy rate (in \%)} & 45-55 & 55-65 & 65-75 & 75-85 & 85-95 \\
+  \hline
+  \textbf{Number of cities} & 3 & 10 & 11 & 8 & 3 \\
+  \hline
+ \end{tabular}
+\end{center}
+
+\item The following table shows the ages of the patients admitted in a hospital during a year:
+
+\vspace{2mm}
+\begin{center}
+ \begin{tabular}{|c|c|c|c|c|c|c|}
+  \hline
+  \textbf{Age (in years)} & 5-15 & 15-25 & 25-35 & 35-45 & 45-55 & 55-65 \\
+  \hline
+  \textbf{Number of cities} & 6 & 11 & 21 & 23 & 14 & 15 \\
+  \hline
+ \end{tabular}
+\end{center}
+Find the mode and the mean of the data given above. Compare and interpret the two
+measures of central tendency.
+
+\item The following distribution gives the state-wise teacher-student ratio in higher
+secondary schools of India. Find the mode and mean of this data. Interpret the two
+measures.
+
+\vspace{2mm}
+\begin{center}
+ \begin{tabular}{|c|c|}
+  \hline
+  \textbf{Number of students per teacher} & \textbf{Number of states / U.T.} \\
+  \hline
+   15 - 20 & 3 \\
+   20 - 25 & 8 \\
+  25 - 30 & 9 \\
+  30 - 35 & 10 \\
+  35 - 40 & 3 \\
+  40 - 45 & 0 \\
+  45 - 50 & 0 \\
+  50 - 55 & 2 \\
+  \hline
+ \end{tabular}
+\end{center}
+
+
+
+\item The following frequency distribution gives the monthly consumption of electricity of
+68 consumers of a locality. Find the median, mean and mode of the data and compare
+them.
+
+\vspace{2mm}
+\begin{center}
+ \begin{tabular}{|c|c|}
+  \hline
+  \textbf{Monthly consumption (in units)} & \textbf{Number of consumers} \\
+  \hline
+   65 - 85 & 4 \\
+   85 - 105 & 5 \\
+  105 - 125 & 13 \\
+  125 - 145 & 20 \\
+  145 - 165 & 14 \\
+  165 - 185 & 8 \\
+  185 - 205 & 4 \\
+   \hline
+ \end{tabular}
+\end{center}
+
+
+
+
+
+
+\end{enumerate}
+
+
+%\vspace*{0.2cm}
+%\begin{center}
+%{\bf ************************************}
+%\end{center}
+
+\end{document}
